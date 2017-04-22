@@ -47,12 +47,12 @@ The grid of blocks and the thread blocks can be 1, 2, or 3-dimensional.
 
 ![Thread Mapping]({{ page.root }}/fig/02-threadmapping.png "Thread Mapping")
 
-The CUDA architecture is built around a scalable array of multithreaded Streaming Multiprocessors (SMs) as shown below. Each SM has a set of 
+The CUDA architecture is built around a scalable array of multithreaded *Streaming Multiprocessors (SMs)* as shown below. Each SM has a set of 
 execution units, a set of registers and a chunk of shared memory.
 
 ![Streaming Multiprocessors]({{ page.root }}/fig/02-sm.png "Streaming Multiprocessors")
 
-In an NVIDIA GPU, the basic unit of execution is the warp. A warp is a collection of threads, 32 in current implementations, that are executed 
+In an NVIDIA GPU, the basic unit of execution is the *warp*. A warp is a collection of threads, 32 in current implementations, that are executed 
 simultaneously by an SM. Multiple warps can be executed on an SM at once.
 
 When a CUDA program on the host CPU invokes a kernel grid, the blocks of the grid are enumerated and distributed to SMs with available execution 
@@ -110,7 +110,7 @@ array[x, y] = compute(x, y)
 
 ### Memory Hierarchy
 
-The CPU and GPU have separate memory spaces. This means that data that is processed by the GPU must be moved from the CPU to the GPU before 
+The CPU and GPU have separate *memory spaces*. This means that data that is processed by the GPU must be moved from the CPU to the GPU before 
 the computation starts, and the results of the computation must be moved back to the CPU once processing has completed.
 
 #### Global memory
@@ -124,7 +124,7 @@ This memory is accessible to all threads as well as the host (CPU).
 
 #### Shared memory
 
-Each **thread block** has its own shared memory
+Each *thread block* has its own shared memory
 
 - Accessible only by threads within the block
 - Much faster than local or global memory
@@ -135,7 +135,7 @@ Each **thread block** has its own shared memory
 
 #### Local memory
 
-Each **thread** has its own private local memory
+Each *thread* has its own private local memory
 
 - Only exists for the lifetime of the thread
 - Generally handled automatically by the compiler
