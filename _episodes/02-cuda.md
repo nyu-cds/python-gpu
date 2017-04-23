@@ -1,10 +1,19 @@
 ---
 title: "CUDA"
-teaching: 40
-exercises: 20
+teaching: 30
+exercises: 0
 questions:
+- "What is CUDA and how is it used for computing?"
+- "What is the basic programming model used by CUDA?"
+- "How are CUDA programs structured?"
+- "What is the importance of memory in a CUDA program?"
 objectives:
+- "Learn how CUDA programs are structured to make efficient use of GPUs."
+- "Learn how memory must be taken into consideration when writing CUDA programs."
 keypoints:
+- "CUDA is designed for a specific GPU architecture, namely NVIDIA's Streaming Multiprocessors."
+- "CUDA has many programming operations that are common to other parallel programming paradigms."
+- "The memory architecture is extremely important to obtaining good performance from CUDA programs."
 ---
 In November 2006, NVIDIA introduced CUDA, which originally stood for "Compute Unified Device Architecture", a general purpose parallel computing 
 platform and programming model that leverages the parallel compute engine in NVIDIA GPUs to solve many complex computational problems in a more 

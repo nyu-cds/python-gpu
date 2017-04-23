@@ -3,8 +3,16 @@ title: "Introduction"
 teaching: 30
 exercises: 0
 questions:
+- "What is the difference between a CPU and a GPU?"
+- "Why is a GPU more efficient for some problems?"
+- "How does a GPU program work?"
 objectives:
+- "Learn about the differences between a CPU and a GPU."
+- "Understand why GPUs are an import computational resource."
 keypoints:
+- "CPUs are for general computing, GPUs are for specific problems."
+- "GPUs are suitable for data parallel computations."
+- "With the right problem, a GPU can be thousands of times faster than a CPU."
 ---
 ## Architecture
 
