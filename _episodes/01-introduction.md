@@ -66,7 +66,7 @@ When computer scientists first attempted to use GPUs for scientific computing, t
 manipulating traingles. This was incredibly difficult to do, and took a lot of time and dedication. However, there are now high level languages 
 (such as CUDA and OpenCL) that target the GPUs directly, so GPU programming is rapidly becoming mainstream in the scientific community.
 
-A GPU program comprises two parts: a *host* part the runs on the CPU and one or more *kernels* that run on the GPU. Typically, the CPU portion of 
+A GPU program comprises two parts: a *host* part that runs on the CPU and one or more *kernels* that run on the GPU. Typically, the CPU portion of 
 the program is used to set up the parameters and data for the computation, while the kernel portion performs the actual computation. In some 
 cases the CPU portion may comprise a parallel program that performs message passing operations using MPI.
 
