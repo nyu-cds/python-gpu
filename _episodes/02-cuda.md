@@ -47,8 +47,7 @@ Threads are arranged as a grid of thread blocks:
 
 ![Grid]({{ page.root }}/fig/02-threadgrid.png "Grid")
 
-Thread blocks are required to execute independently: It must be possible to execute them in any order, in parallel or in series. This independence r
-equirement allows thread blocks to be scheduled in any order across any number of cores, enabling programmers to write code that scales with the 
+Thread blocks are required to execute independently: It must be possible to execute them in any order, in parallel or in series. This independence requirement allows thread blocks to be scheduled in any order across any number of cores, enabling programmers to write code that scales with the 
 number of cores. Threads within a block can cooperate by sharing data through some shared memory and by synchronizing their execution to 
 coordinate memory accesses.
 
